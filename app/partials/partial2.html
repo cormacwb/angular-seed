@@ -2,4 +2,8 @@
 <p>
   Showing of 'interpolate' filter:
   {{ 'Current version is v%VERSION%.' | interpolate }}
+  <br>
+  <input ng-model="status">
+  {{status|getImagePath}}
+  <img ng-src={{status|getImagePath}}>
 </p>
